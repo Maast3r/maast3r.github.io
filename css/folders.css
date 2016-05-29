@@ -1,0 +1,33 @@
+#folder-col {
+  width: 110px;
+  left: 0;
+  position: fixed;
+}
+
+.folder-wrapper {
+  text-align: center;
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.folder-wrapper i {
+  font-size: 50px;
+  color: #7EC0EE
+}
+
+.folder-label{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: #eeeeee;
+}
+
+.folder-wrapper:hover {
+  cursor: pointer;
+  background-color: rgb(20, 20, 180);
+  overflow: visible;
+}

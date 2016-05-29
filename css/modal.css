@@ -1,0 +1,133 @@
+#modal-wrapper {
+  display: none;
+  background: #eeeeee;
+  height: 600px;
+  width: 800px;
+  z-index: 10;
+  position: fixed;
+  overflow-y: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+#modal-bar {
+  display: none;
+  background: #7EC0EE;
+  text-align: center;
+  height: 30px;
+}
+
+#modal-bar:hover {
+  cursor: move;
+}
+
+#modal-title {
+  text-align: center;
+  width: 110px;
+  float: left;
+  padding-top: 4px;
+}
+
+#close {
+  float: right;
+  vertical-align: middle;
+  background: red;
+  color: white;
+  height: 100%;
+  font-size: 24px;
+  width: 30px;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+.files {
+  width: 95%;
+  display: block;
+  height: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 30px;
+  border-bottom: solid #000000;
+  overflow-y: auto;
+}
+
+.files div {
+  width: 24%;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.files div:hover {
+  background: #dddddd;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.files div i {
+  color: #7EC0EE;
+  font-size: 50px;
+  display: block;
+}
+
+.files div div {
+  display: block;
+  width: 100%;
+}
+
+#java-folder-modal {
+  display: none;
+}
+
+#c-folder-modal {
+  display: none;
+}
+
+#python-folder-modal {
+  display: none;
+}
+
+#web-folder-modal {
+  display: none;
+}
+
+#modle-folder-modal {
+  display: none;
+}
+
+#instructions-modal {
+  display: none;
+}
+
+.description {
+  display: none;
+  text-align: center;
+  height: 337px;
+  overflow-y: auto;
+  clear: both;
+}
+
+ul {
+  /*list-style-image: url();*/
+}
+
+.desc-left {
+  float: left;
+  width: 375px;
+  overflow-y: auto;
+  border-right: thin solid #7EC0EE;
+  text-align: left;
+  height: 250px;
+  padding-right: 20px;
+}
+
+.desc-right {
+  float: right;
+  width: 400px;
+  overflow-y: auto;
+  height: 273px;
+}

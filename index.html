@@ -5,10 +5,16 @@
     <title>Resume OS</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/taskbar.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/folders.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="js/files.js"></script>
+    <script type="text/javascript" src="js/folders.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/taskbar.js"></script>
   </head>
   <body>
     <div id="os">
@@ -20,35 +26,35 @@
         <div id="folder-col">
           <div id="java" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
-            <div class="folder label">Java Projects</div>
+            <div class="folder-label">Java Projects</div>
           </div>
           <div id="c" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
-            <div class="folder label">C/C# Projects</div>
+            <div class="folder-label">C/C# Projects</div>
           </div>
           <div id="python" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
-            <div class="folder label">Python Projects</div>
+            <div class="folder-label">Python Projects</div>
           </div>
           <div id="web" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
-            <div class="folder label">Web Projects</div>
+            <div class="folder-label">Web Projects</div>
           </div>
           <div id="model" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
-            <div class="folder label">Modeling Languages Projects</div>
+            <div class="folder-label">Modeling Languages Projects</div>
           </div>
           <div id="resume" class="folder-wrapper">
             <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            <div class="folder label">Resume</div>
+            <div class="folder-label">Resume</div>
           </div>
           <div id="rose" class="folder-wrapper">
             <i class="fa fa-file" aria-hidden="true"></i>
-            <div class="folder label">Rose-Hulman</div>
+            <div class="folder-label">Rose-Hulman</div>
           </div>
           <div id="instructions" class="folder-wrapper">
             <i class="fa fa-file-word-o" aria-hidden="true"></i>
-            <div class="folder label">Instructions</div>
+            <div class="folder-label">Instructions</div>
           </div>
         </div>
 
@@ -60,6 +66,8 @@
             <div id="modal-title"></div>
             <i id="close" class="fa fa-close" aria-hidden="true"></i>
           </div>
+
+
           <div id="java-folder-modal" class="modal">
             <div class="files">
               <div id="evolution" class="file-wrapper">
@@ -89,6 +97,7 @@
                   <li>Built off of the board game <a href="https://boardgamegeek.com/boardgame/155703/evolution">Evolution</a></li>
                   <li>Used big bang, sandwich, top-down, and bottom-up integration testing</li>
                   <li>Used <a href="https://github.com/Maast3r/javafuzz">JavaFuzz</a> to fuzz test</li>
+                </ul>
               </div>
               <div class="desc-right">
                 <img src="https://code.org/images/apple-touch-icon-precomposed.png" />
@@ -102,6 +111,7 @@
                   <li>Class project for CSSE374 (Software Design)</li>
                   <li>Can recognize Decorator, Command, Adapter, Visitor, Composite, Iterator, and Singleton Patterns and colors the UML diagram accordingly.</li>
                   <li><a href="http://www.tutorialspoint.com/design_pattern/">Design Patterns</a></li>
+                </ul>
               </div>
               <div class="desc-right">
                 <img src="https://code.org/images/apple-touch-icon-precomposed.png" />
@@ -117,6 +127,7 @@
                   <li>Can do all basic tree operations in lg(n) time</li>
                   <li>Can perform concentate and split operations</li>
                   <li>Included test suite with displayable debugging tool</li>
+                </ul>
               </div>
               <div class="desc-right">
                 <img src="https://code.org/images/apple-touch-icon-precomposed.png" />
@@ -136,6 +147,34 @@
 
 
           <div id="c-folder-modal" class="modal">
+            <div class="files">
+              <div id="bare-os" class="file-wrapper">
+                <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                <div class="file-title">Bare OS</div>
+              </div>
+              <div id="julia" class="file-wrapper">
+                <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                <div class="file-title">Julia Set Generator</div>
+              </div>
+              <div id="epidemic" class="file-wrapper">
+                <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                <div class="file-title">Epidemic</div>
+              </div>
+            </div>
+            <div id="bare-os-description" class="description">
+              <h3>Bare OS</h3>
+              <div class="desc-left">
+                <ul>
+                  <li>Basic 16-bit operating system</li>
+                  <li>Built in C using Bochs emulator</li>
+                  <li>Can perform ls/dir, type, create, copy, delete, execute, execforeground, kill, ps, clear/cls, help, and quit operations</li>
+                  <li>Extra: Displays windows logo on startup and you can change the background color with the 'bcolor' command (for fun)</li>
+                </ul>
+              </div>
+              <div class="desc-right">
+                <img src="https://code.org/images/apple-touch-icon-precomposed.png" />
+              </div>
+            </div>
           </div>
 
 
