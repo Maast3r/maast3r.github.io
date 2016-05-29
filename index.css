@@ -15,11 +15,39 @@ html, body {
   height: calc(100% - 50px);
 }
 
+/**
+  * FOLDER
+  **/
+
 #folder-col {
-  width: 100px;
+  width: 110px;
   left: 0;
   position: fixed;
 }
+
+.folder-wrapper {
+  text-align: center;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.folder-wrapper i {
+  font-size: 50px;
+  color: #7EC0EE
+}
+
+.folder-wrapper:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+#folder-modal {
+  display: none;
+}
+
+/**
+  * TASKBAR
+  **/
 
 #taskbar {
   width: 100%;
@@ -131,18 +159,22 @@ html, body {
 
 #github:hover {
   color: #a29baa;
+  transition: color 0.3s
 }
 
 #linkedin:hover {
   color: #0077B5;
+  transition: color 0.3s
 }
 
 #spotify:hover {
   color: #23CF5F;
+  transition: color 0.3s
 }
 
 #steam:hover {
   color: #cccccc;
+  transition: color 0.3s
 }
 
 #system-time {
