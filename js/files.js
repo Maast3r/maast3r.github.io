@@ -57,4 +57,22 @@ $(document).ready(function() {
     var wind = window.open("https://github.com/Maast3r/BareOS", "_blank");
     wind.focus();
   });
+
+  $("#julia").click(function() {
+    hideAllDesc();
+    $("#julia-description").show();
+  });
+  $("#julia").dblclick(function() {
+    var wind = window.open("https://github.com/Maast3r/Julia-Set", "_blank");
+    wind.focus();
+  });
+
+  $("#pandemic").click(function() {
+    hideAllDesc();
+    $("#pandemic-description").show();
+  });
+  $("#pandemic").dblclick(function() {
+    var wind = window.open("https://github.com/cbudo/Pandemic-Windows", "_blank");
+    wind.focus();
+  });
 });
