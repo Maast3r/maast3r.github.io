@@ -34,6 +34,10 @@
             <i class="fa fa-folder-open" aria-hidden="true"></i>
             <div class="folder label">Web Projects</div>
           </div>
+          <div id="model" class="folder-wrapper">
+            <i class="fa fa-folder-open" aria-hidden="true"></i>
+            <div class="folder label">Modeling Languages Projects</div>
+          </div>
           <div id="resume" class="folder-wrapper">
             <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             <div class="folder label">Resume</div>
@@ -57,19 +61,100 @@
             <i id="close" class="fa fa-close" aria-hidden="true"></i>
           </div>
           <div id="java-folder-modal" class="modal">
-            <div class="file-wrapper">
-              <i class="fa fa-file-code-o" aria-hidden="true"></i>
-              <div class="file-title">Doublets</div>
+            <div class="files">
+              <div id="evolution" class="file-wrapper">
+                <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                <div class="file-title">Evolution</div>
+              </div>
+              <div id="uml-maker" class="file-wrapper">
+                <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                <div class="file-title">UML Maker</div>
+              </div>
+              <div id="editor-trees" class="file-wrapper">
+                <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                <div class="file-title">Editor Tree</div>
+              </div>
+              <div id="doublets" class="file-wrapper">
+                <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                <div class="file-title">Doublets</div>
+              </div>
+            </div>
+            <div id="evolution-description" class="description">
+              <h3>Evolution</h3>
+              <div class="desc-left">
+                <ul>
+                  <li>Built using TDD and BDD</li>
+                  <li>Class project for CSSE376 (Software Quality Assurance)</li>
+                  <li>100% mutation coverage</li>
+                  <li>Built off of the board game <a href="https://boardgamegeek.com/boardgame/155703/evolution">Evolution</a></li>
+                  <li>Used big bang, sandwich, top-down, and bottom-up integration testing</li>
+                  <li>Used <a href="https://github.com/Maast3r/javafuzz">JavaFuzz</a> to fuzz test</li>
+              </div>
+              <div class="desc-right">
+                <img src="https://code.org/images/apple-touch-icon-precomposed.png" />
+              </div>
+            </div>
+            <div id="uml-maker-description" class="description">
+              <h3>UML Maker</h3>
+              <div class="desc-left">
+                <ul>
+                  <li>Built using Java's ASM Library</li>
+                  <li>Class project for CSSE374 (Software Design)</li>
+                  <li>Can recognize Decorator, Command, Adapter, Visitor, Composite, Iterator, and Singleton Patterns and colors the UML diagram accordingly.</li>
+                  <li><a href="http://www.tutorialspoint.com/design_pattern/">Design Patterns</a></li>
+              </div>
+              <div class="desc-right">
+                <img src="https://code.org/images/apple-touch-icon-precomposed.png" />
+              </div>
+            </div>
+            <div id="editor-trees-description" class="description">
+              <h3>Editor Tree</h3>
+              <div class="desc-left">
+                <ul>
+                  <li>Built in Java using self-made classes</li>
+                  <li>Self-balancing tree with letters as node values</li>
+                  <li>Class project for CSSE230 (Introduction to Algorthims and Data Structures)</li>
+                  <li>Can do all basic tree operations in lg(n) time</li>
+                  <li>Can perform concentate and split operations</li>
+                  <li>Included test suite with displayable debugging tool</li>
+              </div>
+              <div class="desc-right">
+                <img src="https://code.org/images/apple-touch-icon-precomposed.png" />
+              </div>
+            </div>
+            <div id="doublets-description" class="description">
+              <h3>Doublets</h3>
+              <div class="desc-left">
+                <ul>
+                  <li>Solver of the <a href="https://en.wikipedia.org/wiki/Word_ladder">Doublets</a> game</li>
+              </div>
+              <div class="desc-right">
+                <img src="https://code.org/images/apple-touch-icon-precomposed.png" />
+              </div>
             </div>
           </div>
+
+
           <div id="c-folder-modal" class="modal">
           </div>
+
+
           <div id="python-folder-modal" class="modal">
           </div>
+
+
           <div id="web-folder-modal" class="modal">
           </div>
+
+
+          <div id="model-folder-modal" class="modal">
+          </div>
+
+
           <div id="instructions-modal" class="modal">
           </div>
+
+
         </div>
       </div>
 
@@ -83,9 +168,6 @@
           <label id="searchLabel">
             <i class="fa fa-search" aria-hidden="true"></i> Search
           </label>
-        </div>
-        <div class="program sub-taskbar">
-          <i class="fa fa-folder" aria-hidden="true"></i>
         </div>
         <div id="github" class="program sub-taskbar">
           <i class="fa fa-github" aria-hidden="true"></i>
