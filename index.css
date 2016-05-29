@@ -5,12 +5,6 @@ html, body {
   margin: 0;
 }
 
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 #os {
   width: 100%;
   height: 100%;
@@ -117,4 +111,60 @@ html, body {
 
 #query:focus ~ #bar:before, #query:focus ~ #bar:after {
   width:50%;
+}
+
+.program {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  width: 50px;
+  transition: color 0.5s;
+}
+
+.program:hover {
+  cursor: pointer;
+}
+
+.program i {
+  vertical-align: middle;
+}
+
+#github:hover {
+  color: #a29baa;
+}
+
+#linkedin:hover {
+  color: #0077B5;
+}
+
+#spotify:hover {
+  color: #23CF5F;
+}
+
+#steam:hover {
+  color: #cccccc;
+}
+
+#system-time {
+  float: right;
+  color: white;
+  text-align: center;
+  width: 85px;
+}
+
+#time {
+  padding-top: 4px;
+}
+
+.toolbar {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  width: 30px;
+  padding-top: 12px;
+  float: right;
+}
+
+.toolbar i {
+  vertical-align: middle;
 }

@@ -2,26 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Andrew's OS</title>
+    <title>Resume OS</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
-    <!-- <div id="navbar">
-      <div class="navItem"></div>
-    </div> -->
     <div id="os">
       <div id="desktop">
         <div id="folder-col">
         </div>
       </div>
 
-      </div>
       <div id="taskbar">
         <div id="start-icon" class="sub-taskbar">
-          <i class="fa fa-beer" aria-hidden="true"></i>
+          <i class="fa fa-fire" aria-hidden="true"></i>
         </div>
         <div id="search" class="sub-taskbar">
           <input type="text" id="query" required />
@@ -30,15 +27,32 @@
             <i class="fa fa-search" aria-hidden="true"></i> Search
           </label>
         </div>
-        <div id="programs" class="sub-taskbar">
+        <div class="program sub-taskbar">
+          <i class="fa fa-folder" aria-hidden="true"></i>
         </div>
-        <div id="toolbar" class="sub-taskbar">
+        <div class="program sub-taskbar">
+          <i id="github" class="fa fa-github" aria-hidden="true"></i>
+        </div>
+        <div class="program sub-taskbar">
+          <i id="linkedin" class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+        <div class="program sub-taskbar">
+          <i id="spotify" class="fa fa-spotify" aria-hidden="true"></i>
+        </div>
+        <div class="program sub-taskbar">
+          <i id="steam" class="fa fa-steam" aria-hidden="true"></i>
         </div>
         <div id="system-time" class="sub-taskbar">
+          <div id="time"></div>
+          <div id="date"></div>
+        </div>
+        <div class="sub-taskbar toolbar">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </div>
+        <div class="sub-taskbar toolbar">
+          <i class="fa fa-signal" aria-hidden="true"></i>
         </div>
       </div>
     </div>
-    <!-- <div id="footer">
-    </div> -->
   </body>
 </html>
