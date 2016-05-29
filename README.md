@@ -1,2 +1,2 @@
-# maast3r.github.io
-Personal Website
+# maast3r.github.io - Personal Website
+- Libraries Used: FontAwesome and JQuery
