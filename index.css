@@ -5,6 +5,11 @@ html, body {
   margin: 0;
 }
 
+::selection {
+    background: purple;
+    color: white;
+}
+
 #os {
   width: 100%;
   height: 100%;
@@ -41,7 +46,65 @@ html, body {
   background-color: #eeeeee;
 }
 
-#folder-modal {
+#modal-wrapper {
+  display: none;
+  background: #eeeeee;
+  height: 400px;
+  width: 533px;
+  z-index: 10;
+  position: fixed;
+  overflow-y: auto;
+}
+
+#modal-bar {
+  display: none;
+  background: #7EC0EE;
+  text-align: center;
+  height: 30px;
+}
+
+#modal-bar:hover {
+  cursor: move;
+}
+
+#modal-title {
+  text-align: center;
+  width: 110px;
+  float: left;
+  padding-top: 4px;
+}
+
+#close {
+  float: right;
+  vertical-align: middle;
+  background: red;
+  color: white;
+  height: 100%;
+  font-size: 24px;
+  width: 30px;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+#java-folder-modal {
+  display: none;
+}
+
+#c-folder-modal {
+  display: none;
+}
+
+#python-folder-modal {
+  display: none;
+}
+
+#web-folder-modal {
+  display: none;
+}
+
+#instructions-modal {
   display: none;
 }
 

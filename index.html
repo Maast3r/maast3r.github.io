@@ -6,26 +6,31 @@
     <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
     <div id="os">
       <div id="desktop">
+
+        <!--
+          Folders and Documents
+        -->
         <div id="folder-col">
-          <div class="folder-wrapper">
+          <div id="java" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
             <div class="folder label">Java Projects</div>
           </div>
-          <div class="folder-wrapper">
+          <div id="c" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
             <div class="folder label">C/C# Projects</div>
           </div>
-          <div class="folder-wrapper">
+          <div id="python" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
             <div class="folder label">Python Projects</div>
           </div>
-          <div class="folder-wrapper">
+          <div id="web" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
             <div class="folder label">Web Projects</div>
           </div>
@@ -37,12 +42,35 @@
             <i class="fa fa-file" aria-hidden="true"></i>
             <div class="folder label">Rose-Hulman</div>
           </div>
-          <div class="folder-wrapper">
+          <div id="instructions" class="folder-wrapper">
             <i class="fa fa-file-word-o" aria-hidden="true"></i>
             <div class="folder label">Instructions</div>
           </div>
         </div>
-        <div id="folder-modal"></div>
+
+        <!--
+          MODALS
+        -->
+        <div id="modal-wrapper">
+          <div id="modal-bar">
+            <div id="modal-title"></div>
+            <i id="close" class="fa fa-close" aria-hidden="true"></i>
+          </div>
+          <div id="java-folder-modal" class="modal">
+            <div class="file-wrapper">
+              <i class="fa fa-file-code-o" aria-hidden="true"></i>
+              <div class="file-title">Doublets</div>
+            </div>
+          </div>
+          <div id="c-folder-modal" class="modal">
+          </div>
+          <div id="python-folder-modal" class="modal">
+          </div>
+          <div id="web-folder-modal" class="modal">
+          </div>
+          <div id="instructions-modal" class="modal">
+          </div>
+        </div>
       </div>
 
       <div id="taskbar">
