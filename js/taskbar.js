@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  
+
   function getMinutes() {
     var currentdate = new Date();
     var mins = currentdate.getMinutes();

@@ -1,0 +1,63 @@
+#terminal {
+  background: #000000;
+  height: 600px;
+  width: 800px;
+  z-index: 10;
+  position: fixed;
+  overflow-y: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  left: 100px;
+  top: 150px;
+}
+
+#terminal-bar {
+  background: #7EC0EE;
+  text-align: center;
+  height: 30px;
+}
+
+#terminal-bar:hover {
+  cursor: move;
+}
+
+#terminal-title {
+  text-align: left;
+  width: 210px;
+  float: left;
+  padding-top: 4px;
+}
+
+#terminal-close {
+  float: right;
+  vertical-align: middle;
+  background: red;
+  color: white;
+  height: 100%;
+  font-size: 24px;
+  width: 30px;
+}
+
+#terminal-close:hover {
+  cursor: pointer;
+}
+
+#terminal-history {
+  color: white;
+}
+
+#terminal-history, #terminal-input {
+  font-size: 18px;
+}
+
+#terminal-input {
+  border: none;
+  background: black;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
