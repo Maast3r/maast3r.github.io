@@ -38,6 +38,14 @@ $(document).ready(function() {
     $("#modal-title").html("Web Projects");
   });
 
+  $("#model").dblclick(function() {
+    hideAllModals();
+    $("#modal-wrapper").show();
+    $("#modal-bar").show();
+    $("#model-folder-modal").show();
+    $("#modal-title").html("Modeling Languages Projects");
+  });
+
   $("#resume").dblclick(function() {
     hideAllModals();
     var wind = window.open("Resume.pdf", "_blank");

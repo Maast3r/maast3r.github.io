@@ -153,4 +153,37 @@ $(document).ready(function() {
     var wind = window.open("https://github.com/baseballlover723/league_flash_stats", "_blank");
     wind.focus();
   });
+
+  //
+  // MODELING
+  //
+  $("#sudoku").click(function() {
+    hideAllDesc();
+    $("#sudoku-description").show();
+  });
+  $("#sudoku").dblclick(function() {
+    var wind = window.open("https://github.com/Maast3r/SudokuSolver", "_blank");
+    wind.focus();
+  });
+
+  $("#sender-receiver").click(function() {
+    hideAllDesc();
+    $("#sender-receiver-description").show();
+  });
+  $("#sender-receiver").dblclick(function() {
+    var wind = window.open("https://github.com/baseballlover723/373AlloyProject", "_blank");
+    wind.focus();
+  });
+
+
+  $("#tictactoe").click(function() {
+    hideAllDesc();
+    $("#tictactoe-description").show();
+  });
+  $("#tictactoe").dblclick(function() {
+    var wind = window.open("https://github.com/Maast3r/TicTacToe-ModelChecker", "_blank");
+    wind.focus();
+  });
+
+
 });
