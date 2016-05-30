@@ -9,6 +9,8 @@
   border-width: 1px;
   border-style: solid;
   border-color: white;
+  left: 100px;
+  top: 150px;
 }
 
 #modal-bar {

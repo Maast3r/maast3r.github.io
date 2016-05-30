@@ -1,5 +1,13 @@
 $(document).ready(function() {
+  function hideAllModals() {
+    var modals = document.getElementsByClassName("modal");
+    for (var i=0; i<modals.length; i++) {
+      modals[i].style.display = "none";
+    }
+  }
+
   $("#java").dblclick(function() {
+    hideAllModals();
     $("#modal-wrapper").show();
     $("#modal-bar").show();
     $("#java-folder-modal").show();
@@ -7,6 +15,7 @@ $(document).ready(function() {
   });
 
   $("#c").dblclick(function() {
+    hideAllModals();
     $("#modal-wrapper").show();
     $("#modal-bar").show();
     $("#c-folder-modal").show();
@@ -14,6 +23,7 @@ $(document).ready(function() {
   });
 
   $("#python").dblclick(function() {
+    hideAllModals();
     $("#modal-wrapper").show();
     $("#modal-bar").show();
     $("#python-folder-modal").show();
@@ -21,6 +31,7 @@ $(document).ready(function() {
   });
 
   $("#web").dblclick(function() {
+    hideAllModals();
     $("#modal-wrapper").show();
     $("#modal-bar").show();
     $("#web-folder-modal").show();
@@ -28,6 +39,7 @@ $(document).ready(function() {
   });
 
   $("#resume").dblclick(function() {
+    hideAllModals();
     var wind = window.open("Resume.pdf", "_blank");
     wind.focus();
   });

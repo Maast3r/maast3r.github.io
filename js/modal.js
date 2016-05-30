@@ -17,8 +17,6 @@ $(document).ready(function() {
   document.getElementById('modal-bar').addEventListener('mousedown', mouseDown, false);
   window.addEventListener('mouseup', mouseUp, false);
 
-  $("modal-wrapper").resizable();
-
   $("#close").click(function() {
     $("#modal-wrapper").hide();
     $("#modal-bar").hide();
