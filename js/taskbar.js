@@ -1,6 +1,15 @@
 $(document).ready(function(){
-
-  
+  document.getElementById('query').onkeypress = function(e){
+    if (!e) e = window.event;
+    var keyCode = e.keyCode || e.which;
+    if (keyCode == '13'){ //enter key
+      if($("#query").val() == "terminal"){
+        $("#terminal").show();
+        $("#query").val("");
+        $("#terminal-input").select();
+      }
+    }
+  }
 
   function getMinutes() {
     var currentdate = new Date();

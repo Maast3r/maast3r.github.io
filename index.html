@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/folders.css">
     <link rel="stylesheet" href="css/terminal.css">
+    <link rel="stylesheet" href="css/pong.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/files.js"></script>
     <script type="text/javascript" src="js/folders.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
     <script type="text/javascript" src="js/taskbar.js"></script>
     <script type="text/javascript" src="js/terminal.js"></script>
+    <script type="text/javascript" src="js/pong.js"></script>
   </head>
   <body>
     <div id="os">
@@ -433,9 +435,11 @@
             <div id="terminal-title">Terminal</div>
             <i id="terminal-close" class="fa fa-close" aria-hidden="true"></i>
           </div>
+          <canvas id="pong">Your browser does not support canvas :(</canvas>
           <div id="terminal-history"></div>
           <div id="terminal-input-wrapper">
-            <input id="terminal-input" type="text">
+            <div id="feed">AM:\ResumeOS></div>
+            <textarea id="terminal-input" type="text" spellcheck="false"></textarea>
           </div>
         </div>
 
