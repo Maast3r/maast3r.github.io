@@ -1,11 +1,15 @@
 #pong {
-  position: relative;
-  top: -800px;
-  bottom: 0;
   display: none;
   z-index: 20;
   background: black;
   color: white;
   padding: 0;
   margin: auto;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
