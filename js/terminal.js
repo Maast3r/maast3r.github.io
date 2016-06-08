@@ -8,7 +8,6 @@ $(document).ready(function() {
     if(command == "pong") {
       $("#pong").show();
       $("#pong").focus();
-      $("#terminal").hide();
     }
   }
 

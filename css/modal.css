@@ -81,27 +81,8 @@
   width: 100%;
 }
 
-#java-folder-modal {
-  display: none;
-}
-
-#c-folder-modal {
-  display: none;
-}
-
-#python-folder-modal {
-  display: none;
-}
-
-#web-folder-modal {
-  display: none;
-}
-
-#modle-folder-modal {
-  display: none;
-}
-
-#instructions-modal {
+#java-folder-modal, #c-folder-modal, #python-folder-modal, #web-folder-modal,
+  #model-folder-modal, #instructions-modal{
   display: none;
 }
 
