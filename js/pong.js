@@ -6,8 +6,36 @@ $(document).ready(function() {
   $(document).keyup(function(e) {
     if (e.keyCode == 27) { // escape key maps to keycode `27`
       $("#pong").hide();
+      gameStarted = false;
     }
   });
+
+  function parseTerminal(command) {
+    if(command == "pong") {
+      $("#pong").show();
+      $("#pong").focus();
+      paintStartBackground();
+      player1 = new Player(30, height/2-50, 15, 100);
+    	player2 = new Player(width- 45, height/2-50, 15, 100);
+    	ball = new Ball(width/2, height/2);
+
+    	p1Score = 0;
+    	p2Score = 0;
+    }
+  }
+
+  document.getElementById('terminal-input').onkeypress = function(e){
+    if (!e) e = window.event;
+    var keyCode = e.keyCode || e.which;
+    if (keyCode == '13'){ //enter key
+      parseTerminal($("#terminal-input").val());
+      var addedLine = "<div class='terminal-line-history'>AM:\\ResumeOS>" + $("#terminal-input").val()
+        + "</div>";
+      $("#terminal-history").append(addedLine);
+      document.getElementById('terminal-input').value = "";
+      $("#terminal-input").val("");
+    }
+  }
 
   var width = 800;
   var height = 600;
@@ -51,8 +79,8 @@ $(document).ready(function() {
   }
 
   function paintGameOverBackground(){
+    ctx.beginPath();
     ctx.background = "black";
-  	ctx.beginPath();
   	ctx.strokeStyle = "white";
     ctx.fillStyle = "black";
   	ctx.rect(0, 0, width, height);
@@ -86,8 +114,8 @@ $(document).ready(function() {
   }
 
   function paintBackground(){
+    ctx.beginPath();
     ctx.background = "black";
-  	ctx.beginPath();
   	ctx.strokeStyle = "white";
   	ctx.rect(0, 0, width, height);
     ctx.fillStyle = "black";
@@ -137,18 +165,19 @@ $(document).ready(function() {
 
   var step = function () {
   	if(gameStarted) {
+      console.log("animating");
   		paintBackground();
   		player1.keyPress();
-      	ball.update(player1.paddle, player2.paddle);
-      	render();
-      	animate(step);
+    	ball.update(player1.paddle, player2.paddle);
+    	render();
+    	animate(step);
 
-      	if(p1Score === 10 || p2Score === 10) {
-      		gameStarted = false;
-      		paintGameOverBackground();
-      		return;
-      	}
-      }
+    	if(p1Score === 10 || p2Score === 10) {
+    		gameStarted = false;
+    		paintGameOverBackground();
+    		return;
+    	}
+    }
   };
 
   Paddle.prototype.render = function () {
@@ -212,6 +241,7 @@ $(document).ready(function() {
     ctx.arc(this.x, this.y, 5, 2 * Math.PI, false);
     ctx.fillStyle = "#FFFFFF";
     ctx.fill();
+    ctx.stroke();
   };
 
   Ball.prototype.update = function (paddle1, paddle2) {
@@ -249,22 +279,22 @@ $(document).ready(function() {
     }
 
     //hits right paddle
-    if(right_x == paddle2.x && this.y >= paddle2.y && this.y <= paddle2.y + paddle2.height) {
+    if(right_x == paddle2.x && this.y >= paddle2.y
+        && this.y <= paddle2.y + paddle2.height) {
     	this.x_speed = -this.x_speed;
         if(paddle2.y_speed != 0) {
             this.y_speed = 1.5*paddle2.y_speed;
         }
     }
     //hits left paddle
-    else if(right_x == paddle1.x+25 && this.y >= paddle1.y && this.y <= paddle1.y + paddle1.height) {
+    else if(right_x == paddle1.x+25 && this.y >= paddle1.y
+        && this.y <= paddle1.y + paddle1.height) {
     	this.x_speed = -this.x_speed;
         if(paddle1.y_speed != 0) {
     	   this.y_speed = 1.5*paddle1.y_speed;
         }
     }
   };
-
-  paintStartBackground();
 
   window.addEventListener("keydown", function (event) {
       keysDown[event.keyCode] = true;
