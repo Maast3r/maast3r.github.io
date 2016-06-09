@@ -82,7 +82,7 @@
 }
 
 #java-folder-modal, #c-folder-modal, #python-folder-modal, #web-folder-modal,
-  #model-folder-modal, #instructions-modal{
+    #model-folder-modal, #instructions-modal{
   display: none;
 }
 
