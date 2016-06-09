@@ -12,31 +12,33 @@ $(document).ready(function() {
     });
 
     function pongHandler(command) {
-        if (command == "pong") {
-            $("#pong").show();
-            $("#pong").focus();
-            paintStartBackground();
-            player1 = new Player(30, height / 2 - 50, 15, 100);
-            player2 = new Player(width - 45, height / 2 - 50, 15, 100);
-            ball = new Ball(width / 2, height / 2);
+        $("#pong").show();
+        $("#pong").focus();
+        paintStartBackground();
+        player1 = new Player(30, height / 2 - 50, 15, 100);
+        player2 = new Player(width - 45, height / 2 - 50, 15, 100);
+        ball = new Ball(width / 2, height / 2);
 
-            p1Score = 0;
-            p2Score = 0;
-        }
+        p1Score = 0;
+        p2Score = 0;
     }
 
     function parseInput(command) {
-        switch(command) {
+        switch (command) {
+            case "ls":
+            case "dir":
+                // list dirs/files
+                break;
+            case "cd..":
+                // go up dir
+                break;
+            case "cd blah":
+                // enter dir
+                break;
+            case "open blah":
+                // open blah
             case "pong":
-                $("#pong").show();
-                $("#pong").focus();
-                paintStartBackground();
-                player1 = new Player(30, height / 2 - 50, 15, 100);
-                player2 = new Player(width - 45, height / 2 - 50, 15, 100);
-                ball = new Ball(width / 2, height / 2);
-
-                p1Score = 0;
-                p2Score = 0;
+                pongHandler();
                 break;
             case "help":
                 helpHandler();
@@ -51,8 +53,7 @@ $(document).ready(function() {
         if (!e) e = window.event;
         var keyCode = e.keyCode || e.which;
         if (keyCode == '13') { //enter key
-            var addedLine = "<div>AM:\\ResumeOS> "
-                + $("#terminal-input").val() + "</div>";
+            var addedLine = "<div>AM:\\ResumeOS> " + $("#terminal-input").val() + "</div>";
             $("#terminal-history").append(addedLine);
             parseInput($("#terminal-input").val());
             $("#terminal-input").val("");
