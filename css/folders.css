@@ -1,17 +1,19 @@
-#folder-col {
+.folder-col {
   width: 110px;
-  left: 0;
-  position: fixed;
+  float: left;
+  position: relative;
+  height: 100%;
 }
 
 .folder-wrapper {
   text-align: center;
-  height: 70px;
+  height: 85px;
   margin-top: 10px;
   margin-bottom: 30px;
   width: 110px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .folder-wrapper i {
@@ -20,14 +22,29 @@
 }
 
 .folder-label{
-  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
   color: #eeeeee;
 }
 
 .folder-wrapper:hover {
+  white-space: normal;
   cursor: pointer;
+  text-overflow: clip;
   background-color: rgb(20, 20, 180);
   overflow: visible;
+}
+
+.instructions-explanation {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.instructions-enjoy {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
 }

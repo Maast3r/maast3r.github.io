@@ -27,7 +27,7 @@
         <!--
           Folders and Documents
         -->
-        <div id="folder-col">
+        <div class="folder-col">
           <div id="java" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
             <div class="folder-label">Java Projects</div>
@@ -38,7 +38,7 @@
           </div>
           <div id="python" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
-            <div class="folder-label">Python/Functional Languages Projects</div>
+            <div class="folder-label">Functional Languages Projects</div>
           </div>
           <div id="web" class="folder-wrapper">
             <i class="fa fa-folder-open" aria-hidden="true"></i>
@@ -55,6 +55,16 @@
           <div id="rose" class="folder-wrapper">
             <i class="fa fa-file" aria-hidden="true"></i>
             <div class="folder-label">Rose-Hulman</div>
+          </div>
+        </div>
+        <div class="folder-col">
+          <div id="pong-file" class="folder-wrapper">
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <div class="folder-label">Pong</div>
+          </div>
+          <div id="work" class="folder-wrapper">
+            <i class="fa fa-file" aria-hidden="true"></i>
+            <div class="folder-label">Previous Companies</div>
           </div>
           <div id="instructions" class="folder-wrapper">
             <i class="fa fa-file-word-o" aria-hidden="true"></i>
@@ -423,14 +433,25 @@
             </div>
           </div>
 
-          <!-- TODO -->
           <div id="instructions-modal" class="modal">
+            <div class="instructions-explanation">To open a folder, simply double click the folder icon
+              <i class="fa fa-folder" aria-hidden="true"></i>
+            </div>
+            <div class="instructions-explanation">
+              To open a file, double click the file icon
+              <i class="fa fa-file" aria-hidden="true"></i>
+            </div>
+            <div class="instructions-explanation">
+              To close a window, hit the red x in the top right hand corner of the window
+              <img src="css/redX.png" />
+            </div>
+            <div class="instructions-enjoy">Have an awesome time and enjoy your stay :)</div>
           </div>
-
+          <canvas id="pong" tabindex="1">Your browser does not support canvas :(</canvas>
 
         </div>
 
-        <div id="terminal">
+        <!-- <div id="terminal">
           <div id="terminal-bar">
             <div id="terminal-title">Terminal</div>
             <i id="terminal-close" class="fa fa-close" aria-hidden="true"></i>
@@ -441,7 +462,7 @@
             <div id="feed">AM:\ResumeOS></div>
             <textarea id="terminal-input" type="text" spellcheck="false"></textarea>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -449,13 +470,13 @@
         <div id="start-icon" class="sub-taskbar">
           <img src="css/32.png" />
         </div>
-        <div id="search" class="sub-taskbar">
+        <!-- <div id="search" class="sub-taskbar">
           <input type="text" id="query" required />
           <span id="bar"></span>
           <label id="searchLabel">
             <i class="fa fa-search" aria-hidden="true"></i> Search
           </label>
-        </div>
+        </div> -->
         <div id="github" class="program sub-taskbar">
           <i class="fa fa-github" aria-hidden="true"></i>
         </div>

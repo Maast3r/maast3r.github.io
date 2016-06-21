@@ -6,5 +6,4 @@ This website was modeled to be like a mock operating system. It is essentially t
 
 ##Directions
 - Double click folders and files like you would on a regular operating system to open
-- The only viable keyword to search for is 'terminal'
 - Single click icons in the taskbar to activate them

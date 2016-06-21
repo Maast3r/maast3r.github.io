@@ -49,16 +49,16 @@ $(document).ready(function() {
         }
     }
 
-    document.getElementById('terminal-input').onkeypress = function(e) {
-        if (!e) e = window.event;
-        var keyCode = e.keyCode || e.which;
-        if (keyCode == '13') { //enter key
-            var addedLine = "<div>AM:\\ResumeOS> " + $("#terminal-input").val() + "</div>";
-            $("#terminal-history").append(addedLine);
-            parseInput($("#terminal-input").val());
-            $("#terminal-input").val("");
-        }
-    }
+    // document.getElementById('terminal-input').onkeypress = function(e) {
+    //     if (!e) e = window.event;
+    //     var keyCode = e.keyCode || e.which;
+    //     if (keyCode == '13') { //enter key
+    //         var addedLine = "<div>AM:\\ResumeOS> " + $("#terminal-input").val() + "</div>";
+    //         $("#terminal-history").append(addedLine);
+    //         parseInput($("#terminal-input").val());
+    //         $("#terminal-input").val("");
+    //     }
+    // }
 
     var width = 800;
     var height = 600;
