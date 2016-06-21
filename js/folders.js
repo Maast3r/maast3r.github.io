@@ -6,42 +6,42 @@ $(document).ready(function() {
     }
   }
 
-  $("#java").dblclick(function() {
-    hideAllModals();
+  function showModalTop() {
     $("#modal-wrapper").show();
     $("#modal-bar").show();
+  }
+
+  $("#java").dblclick(function() {
+    hideAllModals();
+    showModalTop();
     $("#java-folder-modal").show();
     $("#modal-title").html("Java Projects");
   });
 
   $("#c").dblclick(function() {
     hideAllModals();
-    $("#modal-wrapper").show();
-    $("#modal-bar").show();
+    showModalTop();
     $("#c-folder-modal").show();
     $("#modal-title").html("C/C# Projects");
   });
 
   $("#python").dblclick(function() {
     hideAllModals();
-    $("#modal-wrapper").show();
-    $("#modal-bar").show();
+    showModalTop();
     $("#python-folder-modal").show();
     $("#modal-title").html("Python Projects");
   });
 
   $("#web").dblclick(function() {
     hideAllModals();
-    $("#modal-wrapper").show();
-    $("#modal-bar").show();
+    showModalTop();
     $("#web-folder-modal").show();
     $("#modal-title").html("Web Projects");
   });
 
   $("#model").dblclick(function() {
     hideAllModals();
-    $("#modal-wrapper").show();
-    $("#modal-bar").show();
+    showModalTop();
     $("#model-folder-modal").show();
     $("#modal-title").html("Modeling Languages Projects");
   });
@@ -59,9 +59,15 @@ $(document).ready(function() {
   });
 
   $("#instructions").dblclick(function() {
-    $("#modal-wrapper").show();
-    $("#modal-bar").show();
+    showModalTop();
     $("#instructions-modal").show();
     $("#modal-title").html("Instructions");
   });
+
+  $("#work").dblclick(function() {
+    showModalTop();
+    $("#work-history").show();
+    $("#modal-title").html("Work History");
+  });
+
 });

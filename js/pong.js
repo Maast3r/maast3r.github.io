@@ -6,12 +6,12 @@ $(document).ready(function() {
     $(document).keyup(function(e) {
         if (e.keyCode == 27) { // escape key maps to keycode `27`
             $("#pong").hide();
-            $("#terminal-input").focus();
+            $("#modal-wrapper").hide();
             gameStarted = false;
         }
     });
 
-    function pongHandler(command) {
+    function pongHandler() {
         $("#pong").show();
         $("#pong").focus();
         paintStartBackground();
@@ -49,16 +49,12 @@ $(document).ready(function() {
         }
     }
 
-    // document.getElementById('terminal-input').onkeypress = function(e) {
-    //     if (!e) e = window.event;
-    //     var keyCode = e.keyCode || e.which;
-    //     if (keyCode == '13') { //enter key
-    //         var addedLine = "<div>AM:\\ResumeOS> " + $("#terminal-input").val() + "</div>";
-    //         $("#terminal-history").append(addedLine);
-    //         parseInput($("#terminal-input").val());
-    //         $("#terminal-input").val("");
-    //     }
-    // }
+    $("#pong-file").dblclick(function() {
+      $("#modal-wrapper").show();
+      $("#pong").show();
+      pongHandler();
+      $("#modal-title").html("Pong");
+    });
 
     var width = 800;
     var height = 600;
