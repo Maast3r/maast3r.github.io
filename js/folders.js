@@ -67,6 +67,7 @@ $(document).ready(function() {
   $("#work").dblclick(function() {
     showModalTop();
     $("#work-history").show();
+    $(".loading-wrapper").show();
     $("#modal-title").html("Work History");
   });
 

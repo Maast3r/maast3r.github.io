@@ -21,6 +21,7 @@
 .loading-wrapper {
     position: fixed;
     margin-left: 15vw;
+    display: none;
 }
 
 @media screen and (min-width: 1060px) {

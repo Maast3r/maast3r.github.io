@@ -14,7 +14,7 @@ $(document).ready(function() {
     div.style.left = e.pageX + 'px';
   }
 
-  document.getElementById('modal-bar').addEventListener('mousedown', mouseDown, false);
+  document.getElementById('modal-title').addEventListener('mousedown', mouseDown, false);
   window.addEventListener('mouseup', mouseUp, false);
 
   $("#close").click(function() {
@@ -25,6 +25,7 @@ $(document).ready(function() {
     $("#python-folder-modal").hide();
     $("#web-folder-modal").hide();
     $("#instructions-modal").hide();
+    $(".loading-wrapper").hide();
   });
 
 });
