@@ -18,6 +18,10 @@
     background: #eeeeee;
 }
 
+.orange {
+  background: orange;
+}
+
 .loading-wrapper {
     position: fixed;
     margin-left: 15vw;
