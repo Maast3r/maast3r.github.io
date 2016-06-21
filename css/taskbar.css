@@ -15,79 +15,19 @@
 }
 
 #start-icon {
-  color: white;
   font-size: 30px;
   width: 50px;
   text-align: center;
 }
 
+#start-icon:hover, #github:hover, #linkedin:hover, #spotify:hover,
+#steam:hover {
+  cursor: pointer;
+  background: #111;
+}
+
 #start-icon img {
   vertical-align: middle;
-}
-
-#search {
-  position: relative;
-  background-color: #303030;
-}
-
-#query {
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 175px;
-  border: none;
-  border-bottom:1px solid white;
-  color: white;
-  background-color: #303030;
-}
-
-#query:focus {
-  outline: none;
-}
-
-#searchLabel {
-  font-size:18px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all;
-  color: white;
-}
-
-#query:focus ~ label, #query:valid ~ label {
-  top:-2px;
-  font-size:10px;
-}
-
-#bar {
-  position: relative;
-  display: block;
-  width: 190px;
-  color: white;
-}
-
-#bar:before, #bar:after {
-  background: white;
-  content:'';
-  height:2px;
-  width:0;
-  bottom:1px;
-  position:absolute;
-  transition:0.2s ease all;
-}
-
-#bar:before {
-  left:50%;
-}
-
-#bar:after {
-  right:50%;
-}
-
-#query:focus ~ #bar:before, #query:focus ~ #bar:after {
-  width:50%;
 }
 
 .program {

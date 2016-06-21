@@ -1,15 +1,10 @@
 $(document).ready(function(){
-  // document.getElementById('query').onkeypress = function(e){
-  //   if (!e) e = window.event;
-  //   var keyCode = e.keyCode || e.which;
-  //   if (keyCode == '13'){ //enter key
-  //     if($("#query").val() == "terminal"){
-  //       $("#terminal").show();
-  //       $("#query").val("");
-  //       $("#terminal-input").select();
-  //     }
-  //   }
-  // }
+  $("#start-icon").click(function() {
+    $("#os").toggleClass("rotate-background")
+    setTimeout(function() {
+      $("#os").toggleClass("");
+    }, 1000);
+  });
 
   function getMinutes() {
     var currentdate = new Date();
