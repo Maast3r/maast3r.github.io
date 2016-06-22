@@ -7,6 +7,13 @@ $(document).ready(function() {
         if (e.keyCode == 27) { // escape key maps to keycode `27`
             $("#pong").hide();
             $("#modal-wrapper").hide();
+            $("#modal-bar").hide();
+            $("#java-folder-modal").hide();
+            $("#c-folder-modal").hide();
+            $("#python-folder-modal").hide();
+            $("#web-folder-modal").hide();
+            $("#instructions-modal").hide();
+            $("#work-history").hide();
             gameStarted = false;
         }
     });
