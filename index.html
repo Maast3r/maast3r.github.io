@@ -20,30 +20,34 @@
     <script type="text/javascript" src="js/pong.js"></script>
   </head>
   <body>
-    <div id="main-animation">
-      <div id="orange-wrapper">
-        <div class="orange-hex top-left orange"></div>
-        <div class="orange-hex top-right orange"></div>
-        <div class="orange-hex middle-left orange"></div>
-        <div class="orange-hex middle-right orange"></div>
-        <div class="orange-hex bottom-left orange"></div>
-        <div class="orange-hex bottom-right orange"></div>
-      </div>
-      <div id="blu-wrapper">
-        <div class="blu-hex top-left blu"></div>
-        <div class="blu-hex top-right blu"></div>
-        <div class="blu-hex middle-left blu"></div>
-        <div class="blu-hex middle-right blu"></div>
-        <div class="blu-hex bottom-left blu"></div>
-        <div class="blu-hex bottom-right blu"></div>
-      </div>
-      <div id="brown-wrapper">
-        <div id="brown-one" class="top-left brown"></div>
-        <div id="brown-two" class="top-right brown"></div>
-        <div id="brown-three" class="middle-left brown"></div>
-        <div id="brown-four" class="middle-right brown"></div>
-        <div id="brown-five" class="bottom-left brown"></div>
-        <div id="brown-six" class="bottom-right brown"></div>
+    <div id="main-animation-wrapper">
+      <div id="main-animation">
+        <div id="welcome">Loading Andrew Ma OS...</div>
+        <div id="orange-wrapper">
+          <div class="orange-hex top-left orange"></div>
+          <div class="orange-hex top-right orange"></div>
+          <div class="orange-hex middle-left orange"></div>
+          <div class="orange-hex middle-right orange"></div>
+          <div class="orange-hex bottom-left orange"></div>
+          <div class="orange-hex bottom-right orange"></div>
+        </div>
+        <div id="blu-wrapper">
+          <div class="blu-hex top-left blu"></div>
+          <div class="blu-hex top-right blu"></div>
+          <div class="blu-hex middle-left blu"></div>
+          <div class="blu-hex middle-right blu"></div>
+          <div class="blu-hex bottom-left blu"></div>
+          <div class="blu-hex bottom-right blu"></div>
+        </div>
+        <div id="brown-wrapper">
+          <div class="brown-hex top-left brown"></div>
+          <div class="brown-hex top-right brown"></div>
+          <div class="brown-hex middle-left brown"></div>
+          <div class="brown-hex middle-right brown"></div>
+          <div class="brown-hex bottom-left brown"></div>
+          <div class="brown-hex bottom-right brown"></div>
+        </div>
+        <div id="hex-inner" class="light-blue"></div>
       </div>
     </div>
     <div id="os">
@@ -476,51 +480,53 @@
           <canvas id="pong" tabindex="1">Your browser does not support canvas :(</canvas>
 
           <div id="work-history" class="modal">
-            <div class="loading-wrapper">
-              <div class="eighty-four-backdrop black"></div>
-              <div class="eight">
-                <svg id='top-eight-animation' width="150" height="150">
-                  <g>
-                  <circle class="circle-animation-one" r="40" cx='75' cy='75' stroke-width="25" stroke="#7a0b54" fill="none"/>
-                  </g>
-                </svg>
-                <div class="circle-top white"></div>
-                <div class="circle-top-inner black"></div>
-                <svg id='bot-eight-animation' width="150" height="150">
-                  <g>
-                  <circle class="circle-animation-two" r="40" cx='75' cy='75' stroke-width="25" stroke="#7a0b54" fill="none"/>
-                  </g>
-                </svg>
-                <div class="circle-bot white"></div>
-                <div class="circle-bot-inner black"></div>
+            <a href="http://8451.com">
+              <div class="loading-wrapper">
+                <div class="eighty-four-backdrop black"></div>
+                <div class="eight">
+                  <svg id='top-eight-animation' width="150" height="150">
+                    <g>
+                    <circle class="circle-animation-one" r="40" cx='75' cy='75' stroke-width="25" stroke="#7a0b54" fill="none"/>
+                    </g>
+                  </svg>
+                  <div class="circle-top white"></div>
+                  <div class="circle-top-inner black"></div>
+                  <svg id='bot-eight-animation' width="150" height="150">
+                    <g>
+                    <circle class="circle-animation-two" r="40" cx='75' cy='75' stroke-width="25" stroke="#7a0b54" fill="none"/>
+                    </g>
+                  </svg>
+                  <div class="circle-bot white"></div>
+                  <div class="circle-bot-inner black"></div>
+                </div>
+                <div class="four">
+                  <div class="four-parallelogram white"></div>
+                  <div id="four-parallelogram-animation" class="four-parallelogram purple"></div>
+                  <div id="four-center-bar-animation" class="four-center-bar purple"></div>
+                  <div class="four-center-bar white"></div>
+                  <div class="four-stem purple-blue"></div>
+                </div>
+                <div id="period-animation" class="period purple"></div>
+                <div class="five">
+                  <div class="five-top black"></div>
+                  <div class="five-stem black"></div>
+                  <div class="five-outer-circle black"></div>
+                  <div class="five-inner-circle white"></div>
+                  <div class="five-inner-rect white"></div>
+                  <div id="five-animation" class="purple-blue"></div>
+                </div>
+                <div class="one">
+                  <div class="one-parallelogram-strip white"></div>
+                  <div id="one-parallelogram-animation" class="one-parallelogram black"></div>
+                  <div class="one-stem black"></div>
+                  <div id="one-stem-animation" class="one-stem blue"></div>
+                </div>
+                <div id="degree-animation" class="degree">
+                  <div class="degree-outer blue"></div>
+                  <div class="degree-inner white"></div>
+                </div>
               </div>
-              <div class="four">
-                <div class="four-parallelogram white"></div>
-                <div id="four-parallelogram-animation" class="four-parallelogram purple"></div>
-                <div id="four-center-bar-animation" class="four-center-bar purple"></div>
-                <div class="four-center-bar white"></div>
-                <div class="four-stem purple-blue"></div>
-              </div>
-              <div id="period-animation" class="period purple"></div>
-              <div class="five">
-                <div class="five-top black"></div>
-                <div class="five-stem black"></div>
-                <div class="five-outer-circle black"></div>
-                <div class="five-inner-circle white"></div>
-                <div class="five-inner-rect white"></div>
-                <div id="five-animation" class="purple-blue"></div>
-              </div>
-              <div class="one">
-                <div class="one-parallelogram-strip white"></div>
-                <div id="one-parallelogram-animation" class="one-parallelogram black"></div>
-                <div class="one-stem black"></div>
-                <div id="one-stem-animation" class="one-stem blue"></div>
-              </div>
-              <div id="degree-animation" class="degree">
-                <div class="degree-outer blue"></div>
-                <div class="degree-inner white"></div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

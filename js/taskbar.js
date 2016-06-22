@@ -1,9 +1,16 @@
 $(document).ready(function(){
+  hideMainLoading();
+
+  function hideMainLoading() {
+    setTimeout(function (){
+      $("#main-animation-wrapper").hide();
+      $("#welcome").hide();
+    }, 2500);
+  }
+
   $("#start-icon").click(function() {
-    $("#os").toggleClass("rotate-background")
-    setTimeout(function() {
-      $("#os").toggleClass("");
-    }, 1000);
+    $("#main-animation-wrapper").show();
+    hideMainLoading();
   });
 
   function getMinutes() {
