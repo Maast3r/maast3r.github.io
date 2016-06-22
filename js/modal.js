@@ -25,7 +25,7 @@ $(document).ready(function() {
     $("#python-folder-modal").hide();
     $("#web-folder-modal").hide();
     $("#instructions-modal").hide();
-    $(".loading-wrapper").hide();
+    $("#work-history").hide();
   });
 
 });

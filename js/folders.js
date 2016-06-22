@@ -68,6 +68,7 @@ $(document).ready(function() {
     showModalTop();
     $("#work-history").show();
     $(".loading-wrapper").show();
+    $("#fathom-voice").show();
     $("#modal-title").html("Work History");
   });
 

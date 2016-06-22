@@ -28,6 +28,11 @@
     display: none;
 }
 
+#fathom-voice {
+  display: none;
+  margin-left: 25%;
+}
+
 @media screen and (min-width: 1060px) {
     .loading-wrapper {
       position: fixed;

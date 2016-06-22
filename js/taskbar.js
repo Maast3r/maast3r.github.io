@@ -55,4 +55,9 @@ $(document).ready(function(){
     wind.focus();
   });
 
+  $("#kaggle").click(function() {
+    var wind = window.open("https://www.kaggle.com/maaster", "_blank");
+    wind.focus();
+  });
+
 });
