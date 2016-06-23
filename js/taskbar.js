@@ -3,7 +3,8 @@ $(document).ready(function(){
 
   function hideMainLoading() {
     setTimeout(function (){
-      $("#main-animation-wrapper").hide();
+      $("#main-animation-wrapper").fadeOut("slow", function() {
+      });
       $("#welcome").hide();
     }, 2500);
   }
