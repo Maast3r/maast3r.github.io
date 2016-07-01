@@ -115,3 +115,7 @@ ul {
   overflow-y: auto;
   height: 273px;
 }
+
+.file-focused {
+  background-color: #dddddd;
+}

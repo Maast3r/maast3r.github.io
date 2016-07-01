@@ -6,6 +6,11 @@ $(document).ready(function() {
     }
   }
 
+  $(".file-wrapper").click(function() {
+    $(".file-wrapper").removeClass("file-focused");
+    $(this).addClass("file-focused");
+  });
+
   //
   // JAVA
   //
