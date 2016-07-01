@@ -11,6 +11,11 @@ $(document).ready(function() {
     $("#modal-bar").show();
   }
 
+  $(".folder-wrapper").click(function() {
+    $(".folder-wrapper").removeClass("folder-focused");
+    $(this).addClass("folder-focused");
+  });
+
   $("#java").dblclick(function() {
     hideAllModals();
     showModalTop();

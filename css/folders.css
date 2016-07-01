@@ -36,6 +36,10 @@
   overflow: visible;
 }
 
+.folder-focused {
+  background-color: rgb(20, 20, 180);
+}
+
 .instructions-explanation {
   margin: 15px;
   font-size: 20px;
