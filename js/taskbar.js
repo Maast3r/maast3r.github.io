@@ -26,9 +26,12 @@ $(document).ready(function(){
     }
     return mins;
   }
+
   function setTimeDate() {
     var currentdate = new Date();
-    $("#time").html(currentdate.getHours() + ":" + getMinutes());
+    var hours = currentdate.getHours();
+    if (hours == "0") hours = "00";
+    $("#time").html(hours + ":" + getMinutes());
     $("#date").html((currentdate.getMonth()+1) + "/" + currentdate.getDate() + "/" +
     currentdate.getFullYear());
   }
