@@ -87,10 +87,29 @@ html, body {
   font-size: 50px;
 }
 
+#portfolioTitle {
+  display: none;
+  position: absolute;
+  width: 550px;
+  margin-left: 240px;
+  margin-top: 60px;
+  font-size: 50px;
+}
+
+#intro {
+  display: none;
+  position: absolute;
+  width: 650px;
+  margin-left: 240px;
+  margin-top: 640px;
+  font-size: 24px;
+}
+
 @media screen and (min-width: 1060px) {
-    #welcome {
+    #welcome, #portfolioTitle, #intro {
         margin-left: 615px;
     }
+
 }
 
 #orange-wrapper, #blu-wrapper, #brown-wrapper {

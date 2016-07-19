@@ -2,12 +2,16 @@ $(document).ready(function(){
   hideMainLoading();
 
   function hideMainLoading() {
-    setTimeout(function (){
-      $("#main-animation-wrapper").fadeOut("slow", function() {
-      });
-      $("#welcome").hide();
+    setTimeout(function() {
+      $("#welcome").fadeOut("slow", function() {});
+      $("#portfolioTitle").fadeIn("slow", function() {});
+      $("#intro").fadeIn("slow", function() {});
     }, 2500);
   }
+
+  $("#main-animation-wrapper").click(function() {
+    $("#main-animation-wrapper").fadeOut("slow", function() {});
+  });
 
   $("#start-icon").click(function() {
     $("#main-animation-wrapper").show();
