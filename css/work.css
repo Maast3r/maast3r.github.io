@@ -175,8 +175,8 @@
 #four-parallelogram-animation {
     position: fixed;
     z-index: 1;
-    -webkit-animation: fourParallelogram 1.5s ease-in;
-    animation: fourParallelogram 1.5s ease-in;
+    -webkit-animation: fourParallelogram 2s ease-in;
+    animation: fourParallelogram 2s ease-in;
     animation-iteration-count: infinite;
 }
 
@@ -194,8 +194,8 @@
 
 #four-center-bar-animation {
     position: fixed;
-    -webkit-animation: fourCenter 1.5s linear;
-    animation: fourCenter 1.5s linear;
+    -webkit-animation: fourCenter 2x linear;
+    animation: fourCenter 2s linear;
     animation-iteration-count: infinite;
     width: 0;
     z-index: 0;
@@ -234,8 +234,8 @@
 }
 
 #period-animation {
-    -webkit-animation: period 1.5 ease-out;
-    animation: period 1.5s ease-out ;
+    -webkit-animation: period 2s ease-out;
+    animation: period 2s ease-out ;
     animation-iteration-count: infinite;
 }
 
@@ -307,8 +307,8 @@
     width: 25px;
     height: 25px;
     margin-left: 375px;
-    -webkit-animation: five 2.5s ease;
-    animation: five 2.5s ease;
+    -webkit-animation: five 2s ease;
+    animation: five 2s ease;
     animation-iteration-count: infinite;
     z-index: 3;
 }
